@@ -172,6 +172,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-box {
+  display: flex;
+  flex-direction: column;
   height: 100%;
   padding: 1.5rem;
   border: 1px solid #e9edf3;
@@ -181,6 +183,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-box h3 {
+  min-height: 3.2rem;
   margin-bottom: 1rem;
   font-size: 1.35rem;
 }
@@ -197,6 +200,10 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   border-radius: 999px;
   background: #e9edf3;
+}
+
+.skill-box .text-end {
+  margin-top: auto;
 }
 
 .skill-box .progress-bar {
