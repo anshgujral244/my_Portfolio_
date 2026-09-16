@@ -29,6 +29,11 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 72px;
   border-bottom: 1px solid #e9edf3;
   z-index: 997;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.header-hidden {
+  transform: translateY(-100%);
 }
 
 .navmenu ul {

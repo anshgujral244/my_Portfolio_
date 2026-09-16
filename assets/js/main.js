@@ -13,6 +13,22 @@
       });
     }
 
+    var header = document.querySelector("#header");
+    var lastScrollY = window.scrollY;
+    if (header) {
+      window.addEventListener("scroll", function () {
+        var currentScrollY = window.scrollY;
+
+        if (currentScrollY <= 80 || currentScrollY < lastScrollY) {
+          header.classList.remove("header-hidden");
+        } else {
+          header.classList.add("header-hidden");
+        }
+
+        lastScrollY = currentScrollY;
+      }, { passive: true });
+    }
+
     var scrollTop = document.querySelector("#scroll-top");
     if (scrollTop) {
       window.addEventListener("scroll", function () {
