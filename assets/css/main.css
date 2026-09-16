@@ -171,10 +171,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2rem;
 }
 
+.skills-animation > [class*="col-"] {
+  display: flex;
+  min-width: 0;
+}
+
 .skill-box {
   display: flex;
   flex-direction: column;
   height: 100%;
+  width: 100%;
   padding: 1.5rem;
   border: 1px solid #e9edf3;
   border-radius: 0.75rem;
@@ -183,9 +189,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skill-box h3 {
-  min-height: 3.2rem;
+  height: 3.2rem;
   margin-bottom: 1rem;
   font-size: 1.35rem;
+  line-height: 1.2;
 }
 
 .skill-box p {
